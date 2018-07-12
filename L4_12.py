@@ -2,19 +2,19 @@ list1 = [3,5,7,8,6,1,2,4,10,9]
 #print (list1)
 key=int(input("please input the search key:"))
 
-# 4.1 Linear search
-# def linearSearch (Skey):
-#     if Skey not in list1:
-#         print ("not found")
-#     else:
-#         i=0
-#         while list1[i]!=Skey and i<len(list1):
-#             i+=1
-#         print ("index",i)
-#     return
-# linearSearch(key)
+### 4.1 Linear search
+def linearSearch (Skey):
+    if Skey not in list1:
+        print ("not found")
+    else:
+        i=0
+        while list1[i]!=Skey and i<len(list1):
+            i+=1
+        print ("index",i)
+    return
+linearSearch(key)
 
-# 4.2 binary search
+### 4.2 binary search
 listS=sorted(list1)
 #print (listS)
 
